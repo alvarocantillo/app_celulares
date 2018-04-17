@@ -30,7 +30,8 @@ public class Reporte4 extends AppCompatActivity {
             if (cel.getMarca().equals(aple) && cel.getColor().equals(colo)) {
                 conteo = conteo + 1;
             }
-            Toast.makeText(this, "" + conteo, Toast.LENGTH_SHORT).show();
+
         }
+        Toast.makeText(this, "" + conteo, Toast.LENGTH_SHORT).show();
     }
 }
