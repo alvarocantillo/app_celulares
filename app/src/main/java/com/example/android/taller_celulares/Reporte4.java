@@ -11,17 +11,26 @@ import java.util.ArrayList;
 public class Reporte4 extends AppCompatActivity {
     private Resources recursos;
     private ArrayList<Celular> celulares;
-    private String [] opc2;
+    private ArrayList<Celular> celulares2;
+    private String aple = "Apple";
+    private String colo = "Negro";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporte4);
-        celulares=Datos.obtener();
-        opc2=getResources().getStringArray(R.array.opcioneslistar);
+        celulares = Datos.obtener();
     }
-    public void mostrar(View V){
-        int conteo=0;
-        Toast.makeText(this, ""+conteo, Toast.LENGTH_SHORT).show();
+
+    public void mostrar(View V) {
+        int conteo = 0;
+        Celular cel;
+        for (int i = 0; i < celulares.size(); i++) {
+            cel = celulares.get(i);
+            if (cel.getMarca().equals(aple) && cel.getColor().equals(colo)) {
+                conteo = conteo + 1;
+            }
+            Toast.makeText(this, "" + conteo, Toast.LENGTH_SHORT).show();
+        }
     }
 }
