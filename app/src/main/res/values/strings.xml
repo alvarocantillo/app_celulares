@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Taller_celulares</string>
     <string name="opciones">OPCIONES</string>
-    <string name="registrar">Registrar</string>
+    <string name="registrar">REGISTRAR</string>
     <string name="marca_celular">Marca</string>
     <string name="precio">Precio</string>
     <string name="color">Color</string>
@@ -10,4 +10,22 @@
     <string name="no">No</string>
     <string name="reporte_4">REPORTE 4</string>
     <string name="reporte_5">REPORTE 5</string>
+    <string name="listar">LISTAR</string>
+    <string name="samsung">Samsung</string>
+    <string name="apple">Apple</string>
+    <string name="huawei">Huawei</string>
+    <string name="nokia">Nokia</string>
+    <string name="dorado">Dorado</string>
+    <string name="negro">Negro</string>
+    <string name="blanco">Blanco</string>
+    <string name="mensaje_guardado">Celular Gaurdado Exitosamente</string>
+    <string name="error_1">Ingrese el precio del celular</string>
+    <string name="error_2">Ingrese un numero mayor que cero</string>
+    <string name="mostrar">Mostrar</string>
+    <string-array name="opcioneslistar">
+        <item>@string/registrar</item>
+        <item>@string/listar</item>
+        <item>@string/reporte_4</item>
+        <item>@string/reporte_5</item>
+    </string-array>
 </resources>

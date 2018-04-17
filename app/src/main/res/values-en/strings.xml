@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taller_celulares</string>
+    <string name="opciones">OPTIONS</string>
+    <string name="registrar">REGISTER</string>
+    <string name="marca_celular">Brand</string>
+    <string name="precio">Price</string>
+    <string name="color">Color</string>
+    <string name="guardar">Save</string>
+    <string name="borrar">Delete</string>
+    <string name="no">No</string>
+    <string name="reporte_4">REPORT 4</string>
+    <string name="reporte_5">REPORT 5</string>
+    <string name="listar">LIST</string>
+    <string name="samsung">Samnsung</string>
+    <string name="apple">Apple</string>
+    <string name="huawei">Huawei</string>
+    <string name="nokia">Nokia</string>
+    <string name="dorado">Golden</string>
+    <string name="negro">Black</string>
+    <string name="blanco">White</string>
+    <string name="mensaje_guardado">Saved message</string>
+    <string name="error_1">Enter the price of the cell phone</string>
+    <string name="error_2">Enter a number greater than zero</string>
+    <string name="mostrar">Show</string>
+</resources>
