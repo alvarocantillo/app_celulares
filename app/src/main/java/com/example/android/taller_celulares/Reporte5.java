@@ -13,7 +13,6 @@ import java.util.function.DoublePredicate;
 public class Reporte5 extends AppCompatActivity {
     private Resources recursos;
     private ArrayList<Celular> celulares;
-    private String [] opc2;
     private EditText pre;
     private String noki="Nokia";
 
@@ -25,15 +24,19 @@ public class Reporte5 extends AppCompatActivity {
         pre=findViewById(R.id.precio);
 
     }
-    public void mostrar(View V){
-        double num=0,res=0;
+    public void mostrar5(View V){
+        double num=0,res=0,prom=0;
+        int con=0;
+        Celular c;
         for (int i=0;i< celulares.size();i++) {
-            Celular c=celulares.get(i);
+            c=celulares.get(i);
             if (c.getMarca().equals(noki)){
-                num= Double.parseDouble(pre.getText().toString());
+                num= Double.parseDouble(c.getPrecio());
                 res=num+res;
+                con=con+1;
             }
         }
-        Toast.makeText(this, ""+res, Toast.LENGTH_SHORT).show();
+        prom=res/con;
+        Toast.makeText(this, ""+prom, Toast.LENGTH_SHORT).show();
     }
 }
