@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Taller_celulares</string>
     <string name="opciones">OPCIONES</string>
+    <string name="registrar">Registrar</string>
+    <string name="marca_celular">Marca</string>
+    <string name="precio">Precio</string>
+    <string name="color">Color</string>
+    <string name="guardar">Guardar</string>
+    <string name="borrar">Borrar</string>
+    <string name="no">No</string>
+    <string name="reporte_4">REPORTE 4</string>
+    <string name="reporte_5">REPORTE 5</string>
 </resources>
