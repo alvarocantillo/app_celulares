@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class Registro extends AppCompatActivity {
-    private EditText precio1;
+    private EditText pre;
     private RadioButton samsung;
     private RadioButton apple;
     private RadioButton huawei;
@@ -30,138 +30,128 @@ public class Registro extends AppCompatActivity {
         dorado=findViewById(R.id.sdorado);
         negro=findViewById(R.id.snegro);
         blanco=findViewById(R.id.sblanco);
-        precio1=findViewById(R.id.precio);
+        pre=findViewById(R.id.precio_campo);
+        recursos = this.getResources();
     }
     public void guardar(View V){
-        if (validar()==true) {
-            if (samsung.isChecked() == true && dorado.isChecked()) {
+        if (validar()) {
+            if (samsung.isChecked() && dorado.isChecked()) {
                 String marc, colo, prec;
-                marc = "Samsung";
-                colo = "Dorado";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.samsung);
+                colo = recursos.getString(R.string.dorado);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (samsung.isChecked() == true && negro.isChecked()) {
+            } else if (samsung.isChecked() && negro.isChecked()) {
                 String marc, colo, prec;
-                marc = "Samsung";
-                colo = "Negro";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.samsung);
+                colo = recursos.getString(R.string.negro);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (samsung.isChecked() == true && blanco.isChecked()) {
+            } else if (samsung.isChecked() && blanco.isChecked()) {
                 String marc, colo, prec;
-                marc = "Samsung";
-                colo = "Blanco";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.samsung);
+                colo = recursos.getString(R.string.blanco);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (apple.isChecked() == true && dorado.isChecked()) {
+            } else if (apple.isChecked() && dorado.isChecked()) {
                 String marc, colo, prec;
-                marc = "Apple";
-                colo = "Dorado";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.apple);
+                colo = recursos.getString(R.string.dorado);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (apple.isChecked() == true && negro.isChecked()) {
+            } else if (apple.isChecked() && negro.isChecked()) {
                 String marc, colo, prec;
-                marc = "Apple";
-                colo = "Negro";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.apple);
+                colo = recursos.getString(R.string.negro);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (apple.isChecked() == true && blanco.isChecked()) {
+            } else if (apple.isChecked() && blanco.isChecked()) {
                 String marc, colo, prec;
-                marc = "Apple";
-                colo = "Blanco";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.apple);
+                colo = recursos.getString(R.string.blanco);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (huawei.isChecked() == true && dorado.isChecked()) {
+            } else if (huawei.isChecked() && dorado.isChecked()) {
                 String marc, colo, prec;
-                marc = "Huawei";
-                colo = "Dorado";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.huawei);
+                colo = recursos.getString(R.string.dorado);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (huawei.isChecked() == true && negro.isChecked()) {
+            } else if (huawei.isChecked() && negro.isChecked()) {
                 String marc, colo, prec;
-                marc = "Huawei";
-                colo = "Negro";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.huawei);
+                colo = recursos.getString(R.string.negro);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (huawei.isChecked() == true && blanco.isChecked()) {
+            } else if (huawei.isChecked() && blanco.isChecked()) {
                 String marc, colo, prec;
-                marc = "Huawei";
-                colo = "Blanco";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.huawei);
+                colo = recursos.getString(R.string.blanco);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (nokia.isChecked() == true && dorado.isChecked()) {
+            } else if (nokia.isChecked() && dorado.isChecked()) {
                 String marc, colo, prec;
-                marc = "Nokia";
-                colo = "Dorado";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.nokia);
+                colo = recursos.getString(R.string.dorado);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (nokia.isChecked() == true && negro.isChecked()) {
+            } else if (nokia.isChecked() && negro.isChecked()) {
                 String marc, colo, prec;
-                marc = "Nokia";
-                colo = "Negro";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.nokia);
+                colo = recursos.getString(R.string.negro);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
-            }
-            if (nokia.isChecked() == true && blanco.isChecked()) {
+            } else if (nokia.isChecked() && blanco.isChecked()) {
                 String marc, colo, prec;
-                marc = "Nokia";
-                colo = "Blanco";
-                prec = precio1.getText().toString();
+                marc = recursos.getString(R.string.nokia);
+                colo = recursos.getString(R.string.blanco);
+                prec = pre.getText().toString();
                 Celular c = new Celular(marc, colo, prec);
                 c.guardar();
                 Toast.makeText(this, getResources().getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
             }
         }
-
     }
+
 
     public void limpiar(View V){
         borrar();
     }
 
     public void borrar(){
-        precio1.setText("");
+        pre.setText("");
     }
     public boolean validar(){
-        if (precio1.getText().toString().isEmpty()){
-            precio1.requestFocus();
-            precio1.setError(recursos.getString(R.string.error_1));
+        if (pre.getText().toString().isEmpty()){
+            pre.requestFocus();
+            pre.setError(recursos.getString(R.string.error_1));
             return false;
         }
-        if (Double.parseDouble(precio1.getText().toString())<1){
-            precio1.requestFocus();
-            precio1.setError(recursos.getString(R.string.error_2));
+        if (Double.parseDouble(pre.getText().toString())<1){
+            pre.requestFocus();
+            pre.setError(recursos.getString(R.string.error_2));
             return false;
         }
 

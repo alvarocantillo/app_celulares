@@ -102,7 +102,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/precio"
+            android:id="@+id/precio_campo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

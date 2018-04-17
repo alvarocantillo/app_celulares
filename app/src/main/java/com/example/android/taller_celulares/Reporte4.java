@@ -11,15 +11,17 @@ import java.util.ArrayList;
 public class Reporte4 extends AppCompatActivity {
     private Resources recursos;
     private ArrayList<Celular> celulares;
-    private ArrayList<Celular> celulares2;
-    private String aple = "Apple";
-    private String colo = "Negro";
+    private String aple;
+    private String colo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporte4);
         celulares = Datos.obtener();
+        recursos = this.getResources();
+        aple=recursos.getString(R.string.apple);
+        colo=recursos.getString(R.string.negro);
     }
 
     public void mostrar(View V) {
@@ -30,7 +32,6 @@ public class Reporte4 extends AppCompatActivity {
             if (cel.getMarca().equals(aple) && cel.getColor().equals(colo)) {
                 conteo = conteo + 1;
             }
-
         }
         Toast.makeText(this, "" + conteo, Toast.LENGTH_SHORT).show();
     }

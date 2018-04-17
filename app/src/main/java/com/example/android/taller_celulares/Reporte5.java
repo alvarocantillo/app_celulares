@@ -21,7 +21,7 @@ public class Reporte5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reporte5);
         celulares=Datos.obtener();
-        pre=findViewById(R.id.precio);
+        pre=findViewById(R.id.precio_campo);
 
     }
     public void mostrar5(View V){
@@ -37,6 +37,10 @@ public class Reporte5 extends AppCompatActivity {
             }
         }
         prom=res/con;
-        Toast.makeText(this, ""+prom, Toast.LENGTH_SHORT).show();
+        if (prom>0){
+            Toast.makeText(this, "" + prom, Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "0", Toast.LENGTH_SHORT).show();
+        }
     }
 }
